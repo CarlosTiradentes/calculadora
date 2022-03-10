@@ -1,0 +1,103 @@
+'<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <p id="resultado"></p>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .fundo {
+            background-image: linear-gradient(45deg, black, rgb(1, 1, 104));
+            height: 100vh;
+            color: rgb(105, 95, 95);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .calculadora {
+            position: absolute;
+            background-color: black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        .botao {
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            cursor: pointer;
+            margin: 3px;
+            background-color: rgba(56, 55, 55, 0.8);
+            border: none;
+            color: #fff;
+        }
+
+        .botao:hover {
+            background-color: rgba(17, 16, 16, 0.8);
+        }
+
+        #resultado {
+            background-color: white;
+            width: 207px;
+            height: 30px;
+            margin: 5px;
+            font-size: 25px;
+            color: black;
+            text-align: right;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fundo">
+        <h1>Carlos Tiradentes</h1>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado">u8h</p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="incert('C')">C</button></td>
+                    <td><button class="botao" onclick="incert('<')"><</button</td>
+                    <td><button class="botao" onclick="incert('/')">/</button></td>
+                    <td><button class="botao" onclick="incert('X')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="incert('7')">7</button></td>
+                    <td><button class="botao" onclick="incert('8')">8</button></td>
+                    <td><button class="botao" onclick="incert('9')">9</button></td>
+                    <td><button class="botao" onclick="incert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="incert('4')">4</button></td>
+                    <td><button class="botao" onclick="incert('5')">5</button></td>
+                    <td><button class="botao" onclick="incert('6')">6</button></td>
+                    <td><button class="botao" onclick="incert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="incert('1')">1</button></td>
+                    <td><button class="botao" onclick="incert('2')">2</button></td>
+                    <td><button class="botao" onclick="incert('3')">3</button></td>
+                    <td rowspan="2"><button class="botao" style="height: 106px;" onclick="incert('=')">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" style="width: 106px;" onclick="incert('0')">0</button></td>
+                    <td><button class="botao" onclick="incert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>'
